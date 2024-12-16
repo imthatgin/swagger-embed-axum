@@ -1,0 +1,19 @@
+[package]
+name = "swagger-embed-axum"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.7"
+utoipa = { version = "5", features = ["axum_extras", "chrono", "uuid"] }
+axum-embed = "0.1"
+
+tokio = { version = "1", features = ["full"] }
+
+tower = { version = "0.5", features = ["util"] }
+tower-http = { version = "0.6", features = ["fs"] }
+
+serde = { version = "1.0", features = ["derive"] }
+serde_json = { version = "1.0", features = [] }
+
+rust-embed = "8.5"
